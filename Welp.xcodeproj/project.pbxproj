@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5ABB147D2167C42300A2CB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB147C2167C42300A2CB2C /* AppDelegate.swift */; };
+		5ABB14862167C42600A2CB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB14852167C42600A2CB2C /* Assets.xcassets */; };
+		5ABB14892167C42600A2CB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB14872167C42600A2CB2C /* LaunchScreen.storyboard */; };
+		5ABB14B52167C6EB00A2CB2C /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB14B42167C6EB00A2CB2C /* SearchResponse.swift */; };
+		5ABB14BE2167D2D900A2CB2C /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB14BD2167D2D900A2CB2C /* BusinessCell.swift */; };
+		D867012C2CCB408000FFBF79 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867012B2CCB407400FFBF79 /* RequestManager.swift */; };
+		D867012E2CCB40A900FFBF79 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867012D2CCB40A500FFBF79 /* DataParser.swift */; };
+		D86701302CCB41D500FFBF79 /* WelpAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867012F2CCB41D200FFBF79 /* WelpAPIManager.swift */; };
+		D86701322CCB41F900FFBF79 /* WelpSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701312CCB41F600FFBF79 /* WelpSearchService.swift */; };
+		D86701342CCB422C00FFBF79 /* YelpSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701332CCB422600FFBF79 /* YelpSearchRequest.swift */; };
+		D86701382CCBE7CD00FFBF79 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701372CCBE7C900FFBF79 /* Business.swift */; };
+		D867013A2CCBE7EA00FFBF79 /* BusinessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701392CCBE7E000FFBF79 /* BusinessRepository.swift */; };
+		D86701402CCD68C300FFBF79 /* WelpSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867013F2CCD68C300FFBF79 /* WelpSplitViewController.swift */; };
+		D867014B2CCDA81D00FFBF79 /* WelpSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867014A2CCDA80C00FFBF79 /* WelpSearchViewController.swift */; };
+		D867014D2CCDABDC00FFBF79 /* WelpSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867014C2CCDABD500FFBF79 /* WelpSearchView.swift */; };
+		D867014F2CCDAC6800FFBF79 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867014E2CCDAC6800FFBF79 /* NiblessViewController.swift */; };
+		D86701512CCDAC7C00FFBF79 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701502CCDAC7C00FFBF79 /* NiblessView.swift */; };
+		D86701532CCDB71300FFBF79 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701522CCDB71300FFBF79 /* UITableView+Dequeue.swift */; };
+		D86701552CCDD82E00FFBF79 /* WelpSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701542CCDD82E00FFBF79 /* WelpSearchViewModel.swift */; };
+		D86701572CCDDA2E00FFBF79 /* BusinessWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701562CCDDA2E00FFBF79 /* BusinessWebViewController.swift */; };
+		D86701592CCDFD1F00FFBF79 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701582CCDFD1F00FFBF79 /* StyleGuide.swift */; };
+		D867015B2CCE14A200FFBF79 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867015A2CCE14A200FFBF79 /* LocationManager.swift */; };
+		D86701622CCEDF8300FFBF79 /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701612CCEDF8300FFBF79 /* MockAPIManager.swift */; };
+		D86701642CCEDFBC00FFBF79 /* MockLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701632CCEDFBC00FFBF79 /* MockLocationService.swift */; };
+		D86701662CCEDFF100FFBF79 /* MockRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701652CCEDFF100FFBF79 /* MockRequestManager.swift */; };
+		D86701682CCEE02500FFBF79 /* MockJSONResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701672CCEE02500FFBF79 /* MockJSONResponses.swift */; };
+		D867016A2CCEE06000FFBF79 /* WelpSearchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701692CCEE06000FFBF79 /* WelpSearchServiceTests.swift */; };
+		D867016C2CCEE09400FFBF79 /* WelpBusinessRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867016B2CCEE09400FFBF79 /* WelpBusinessRepositoryTests.swift */; };
+		D867016E2CCEE0DC00FFBF79 /* MockSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867016D2CCEE0DC00FFBF79 /* MockSearchService.swift */; };
+		D86701702CCEE48700FFBF79 /* LocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867016F2CCEE48700FFBF79 /* LocationServiceTests.swift */; };
+		D86701722CCEE56400FFBF79 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701712CCEE56400FFBF79 /* MockRequest.swift */; };
+		D86701742CCEE58900FFBF79 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701732CCEE58900FFBF79 /* APIManagerTests.swift */; };
+		D86701782CCEE6E900FFBF79 /* WelpSearchRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701772CCEE6E900FFBF79 /* WelpSearchRequestTests.swift */; };
+		D867017A2CCEE86A00FFBF79 /* WelpSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86701792CCEE86A00FFBF79 /* WelpSearchViewModelTests.swift */; };
+		D867017C2CCEE8DB00FFBF79 /* MockBusinessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867017B2CCEE8DB00FFBF79 /* MockBusinessRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5ABB14902167C42700A2CB2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ABB14712167C42300A2CB2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ABB14782167C42300A2CB2C;
+			remoteInfo = WeedmapsChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5ABB14792167C42300A2CB2C /* Welp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Welp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABB147C2167C42300A2CB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5ABB14852167C42600A2CB2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5ABB14882167C42600A2CB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5ABB148A2167C42600A2CB2C /* Welp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Welp-Info.plist"; sourceTree = "<group>"; };
+		5ABB148F2167C42700A2CB2C /* WelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WelpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABB14952167C42700A2CB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ABB14B42167C6EB00A2CB2C /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		5ABB14BD2167D2D900A2CB2C /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		D867012B2CCB407400FFBF79 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		D867012D2CCB40A500FFBF79 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		D867012F2CCB41D200FFBF79 /* WelpAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpAPIManager.swift; sourceTree = "<group>"; };
+		D86701312CCB41F600FFBF79 /* WelpSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpSearchService.swift; sourceTree = "<group>"; };
+		D86701332CCB422600FFBF79 /* YelpSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchRequest.swift; sourceTree = "<group>"; };
+		D86701372CCBE7C900FFBF79 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		D86701392CCBE7E000FFBF79 /* BusinessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRepository.swift; sourceTree = "<group>"; };
+		D867013F2CCD68C300FFBF79 /* WelpSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpSplitViewController.swift; sourceTree = "<group>"; };
+		D867014A2CCDA80C00FFBF79 /* WelpSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpSearchViewController.swift; sourceTree = "<group>"; };
+		D867014C2CCDABD500FFBF79 /* WelpSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpSearchView.swift; sourceTree = "<group>"; };
+		D867014E2CCDAC6800FFBF79 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		D86701502CCDAC7C00FFBF79 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		D86701522CCDB71300FFBF79 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		D86701542CCDD82E00FFBF79 /* WelpSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpSearchViewModel.swift; sourceTree = "<group>"; };
+		D86701562CCDDA2E00FFBF79 /* BusinessWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessWebViewController.swift; sourceTree = "<group>"; };
+		D86701582CCDFD1F00FFBF79 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		D867015A2CCE14A200FFBF79 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D86701612CCEDF8300FFBF79 /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
+		D86701632CCEDFBC00FFBF79 /* MockLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationService.swift; sourceTree = "<group>"; };
+		D86701652CCEDFF100FFBF79 /* MockRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestManager.swift; sourceTree = "<group>"; };
+		D86701672CCEE02500FFBF79 /* MockJSONResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJSONResponses.swift; sourceTree = "<group>"; };
+		D86701692CCEE06000FFBF79 /* WelpSearchServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpSearchServiceTests.swift; sourceTree = "<group>"; };
+		D867016B2CCEE09400FFBF79 /* WelpBusinessRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpBusinessRepositoryTests.swift; sourceTree = "<group>"; };
+		D867016D2CCEE0DC00FFBF79 /* MockSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchService.swift; sourceTree = "<group>"; };
+		D867016F2CCEE48700FFBF79 /* LocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceTests.swift; sourceTree = "<group>"; };
+		D86701712CCEE56400FFBF79 /* MockRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
+		D86701732CCEE58900FFBF79 /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
+		D86701772CCEE6E900FFBF79 /* WelpSearchRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpSearchRequestTests.swift; sourceTree = "<group>"; };
+		D86701792CCEE86A00FFBF79 /* WelpSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelpSearchViewModelTests.swift; sourceTree = "<group>"; };
+		D867017B2CCEE8DB00FFBF79 /* MockBusinessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBusinessRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ABB14762167C42300A2CB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABB148C2167C42700A2CB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ABB14702167C42300A2CB2C = {
+			isa = PBXGroup;
+			children = (
+				5ABB147B2167C42300A2CB2C /* Welp */,
+				5ABB14922167C42700A2CB2C /* WelpTests */,
+				5ABB147A2167C42300A2CB2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5ABB147A2167C42300A2CB2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB14792167C42300A2CB2C /* Welp.app */,
+				5ABB148F2167C42700A2CB2C /* WelpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ABB147B2167C42300A2CB2C /* Welp */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB14B12167C65000A2CB2C /* Assets */,
+				5ABB14AE2167C62400A2CB2C /* Sources */,
+			);
+			path = Welp;
+			sourceTree = "<group>";
+		};
+		5ABB14922167C42700A2CB2C /* WelpTests */ = {
+			isa = PBXGroup;
+			children = (
+				D86701602CCEDF6900FFBF79 /* Mocks */,
+				D86701692CCEE06000FFBF79 /* WelpSearchServiceTests.swift */,
+				D867016B2CCEE09400FFBF79 /* WelpBusinessRepositoryTests.swift */,
+				D867016F2CCEE48700FFBF79 /* LocationServiceTests.swift */,
+				D86701732CCEE58900FFBF79 /* APIManagerTests.swift */,
+				D86701772CCEE6E900FFBF79 /* WelpSearchRequestTests.swift */,
+				D86701792CCEE86A00FFBF79 /* WelpSearchViewModelTests.swift */,
+				5ABB14952167C42700A2CB2C /* Info.plist */,
+			);
+			path = WelpTests;
+			sourceTree = "<group>";
+		};
+		5ABB14AC2167C5DD00A2CB2C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D867013F2CCD68C300FFBF79 /* WelpSplitViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5ABB14AE2167C62400A2CB2C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D86701482CCDA79600FFBF79 /* Common */,
+				5ABB14B32167C6DA00A2CB2C /* Business */,
+				5ABB14AF2167C63000A2CB2C /* Bootstrap */,
+				5ABB14AC2167C5DD00A2CB2C /* Home */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5ABB14AF2167C63000A2CB2C /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB147C2167C42300A2CB2C /* AppDelegate.swift */,
+				5ABB14872167C42600A2CB2C /* LaunchScreen.storyboard */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		5ABB14B12167C65000A2CB2C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB14852167C42600A2CB2C /* Assets.xcassets */,
+				5ABB14B22167C68300A2CB2C /* Plists */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5ABB14B22167C68300A2CB2C /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB148A2167C42600A2CB2C /* Welp-Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		5ABB14B32167C6DA00A2CB2C /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				D86701472CCDA73F00FFBF79 /* Views */,
+				D86701292CCB3FF500FFBF79 /* Models */,
+				D867012A2CCB403F00FFBF79 /* Service */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		D86701292CCB3FF500FFBF79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D86701542CCDD82E00FFBF79 /* WelpSearchViewModel.swift */,
+				D86701372CCBE7C900FFBF79 /* Business.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D867012A2CCB403F00FFBF79 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D86701352CCB44C500FFBF79 /* Models */,
+				D86701362CCB4FDE00FFBF79 /* Search */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D86701352CCB44C500FFBF79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB14B42167C6EB00A2CB2C /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D86701362CCB4FDE00FFBF79 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D86701392CCBE7E000FFBF79 /* BusinessRepository.swift */,
+				D86701332CCB422600FFBF79 /* YelpSearchRequest.swift */,
+				D867012F2CCB41D200FFBF79 /* WelpAPIManager.swift */,
+				D86701312CCB41F600FFBF79 /* WelpSearchService.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D86701472CCDA73F00FFBF79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D867014C2CCDABD500FFBF79 /* WelpSearchView.swift */,
+				D867014A2CCDA80C00FFBF79 /* WelpSearchViewController.swift */,
+				5ABB14BD2167D2D900A2CB2C /* BusinessCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D86701482CCDA79600FFBF79 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D86701582CCDFD1F00FFBF79 /* StyleGuide.swift */,
+				D86701562CCDDA2E00FFBF79 /* BusinessWebViewController.swift */,
+				D86701522CCDB71300FFBF79 /* UITableView+Dequeue.swift */,
+				D86701502CCDAC7C00FFBF79 /* NiblessView.swift */,
+				D867014E2CCDAC6800FFBF79 /* NiblessViewController.swift */,
+				D86701492CCDA7A900FFBF79 /* Service */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D86701492CCDA7A900FFBF79 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D867012D2CCB40A500FFBF79 /* DataParser.swift */,
+				D867015A2CCE14A200FFBF79 /* LocationManager.swift */,
+				D867012B2CCB407400FFBF79 /* RequestManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D86701602CCEDF6900FFBF79 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D867017B2CCEE8DB00FFBF79 /* MockBusinessRepository.swift */,
+				D86701712CCEE56400FFBF79 /* MockRequest.swift */,
+				D867016D2CCEE0DC00FFBF79 /* MockSearchService.swift */,
+				D86701672CCEE02500FFBF79 /* MockJSONResponses.swift */,
+				D86701652CCEDFF100FFBF79 /* MockRequestManager.swift */,
+				D86701632CCEDFBC00FFBF79 /* MockLocationService.swift */,
+				D86701612CCEDF8300FFBF79 /* MockAPIManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5ABB14782167C42300A2CB2C /* Welp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ABB14A32167C42700A2CB2C /* Build configuration list for PBXNativeTarget "Welp" */;
+			buildPhases = (
+				5ABB14752167C42300A2CB2C /* Sources */,
+				5ABB14762167C42300A2CB2C /* Frameworks */,
+				5ABB14772167C42300A2CB2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Welp;
+			productName = WeedmapsChallenge;
+			productReference = 5ABB14792167C42300A2CB2C /* Welp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5ABB148E2167C42700A2CB2C /* WelpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ABB14A62167C42700A2CB2C /* Build configuration list for PBXNativeTarget "WelpTests" */;
+			buildPhases = (
+				5ABB148B2167C42700A2CB2C /* Sources */,
+				5ABB148C2167C42700A2CB2C /* Frameworks */,
+				5ABB148D2167C42700A2CB2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ABB14912167C42700A2CB2C /* PBXTargetDependency */,
+			);
+			name = WelpTests;
+			productName = WeedmapsChallengeTests;
+			productReference = 5ABB148F2167C42700A2CB2C /* WelpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5ABB14712167C42300A2CB2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "Weedmaps, LLC";
+				TargetAttributes = {
+					5ABB14782167C42300A2CB2C = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1320;
+					};
+					5ABB148E2167C42700A2CB2C = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1320;
+						TestTargetID = 5ABB14782167C42300A2CB2C;
+					};
+				};
+			};
+			buildConfigurationList = 5ABB14742167C42300A2CB2C /* Build configuration list for PBXProject "Welp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5ABB14702167C42300A2CB2C;
+			productRefGroup = 5ABB147A2167C42300A2CB2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5ABB14782167C42300A2CB2C /* Welp */,
+				5ABB148E2167C42700A2CB2C /* WelpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5ABB14772167C42300A2CB2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ABB14892167C42600A2CB2C /* LaunchScreen.storyboard in Resources */,
+				5ABB14862167C42600A2CB2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABB148D2167C42700A2CB2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ABB14752167C42300A2CB2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86701402CCD68C300FFBF79 /* WelpSplitViewController.swift in Sources */,
+				D86701532CCDB71300FFBF79 /* UITableView+Dequeue.swift in Sources */,
+				D86701302CCB41D500FFBF79 /* WelpAPIManager.swift in Sources */,
+				5ABB14BE2167D2D900A2CB2C /* BusinessCell.swift in Sources */,
+				D86701572CCDDA2E00FFBF79 /* BusinessWebViewController.swift in Sources */,
+				D867014B2CCDA81D00FFBF79 /* WelpSearchViewController.swift in Sources */,
+				D86701592CCDFD1F00FFBF79 /* StyleGuide.swift in Sources */,
+				5ABB14B52167C6EB00A2CB2C /* SearchResponse.swift in Sources */,
+				5ABB147D2167C42300A2CB2C /* AppDelegate.swift in Sources */,
+				D867012C2CCB408000FFBF79 /* RequestManager.swift in Sources */,
+				D867014F2CCDAC6800FFBF79 /* NiblessViewController.swift in Sources */,
+				D86701322CCB41F900FFBF79 /* WelpSearchService.swift in Sources */,
+				D86701512CCDAC7C00FFBF79 /* NiblessView.swift in Sources */,
+				D86701342CCB422C00FFBF79 /* YelpSearchRequest.swift in Sources */,
+				D867014D2CCDABDC00FFBF79 /* WelpSearchView.swift in Sources */,
+				D86701382CCBE7CD00FFBF79 /* Business.swift in Sources */,
+				D867012E2CCB40A900FFBF79 /* DataParser.swift in Sources */,
+				D86701552CCDD82E00FFBF79 /* WelpSearchViewModel.swift in Sources */,
+				D867013A2CCBE7EA00FFBF79 /* BusinessRepository.swift in Sources */,
+				D867015B2CCE14A200FFBF79 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABB148B2167C42700A2CB2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86701642CCEDFBC00FFBF79 /* MockLocationService.swift in Sources */,
+				D867016C2CCEE09400FFBF79 /* WelpBusinessRepositoryTests.swift in Sources */,
+				D86701782CCEE6E900FFBF79 /* WelpSearchRequestTests.swift in Sources */,
+				D86701722CCEE56400FFBF79 /* MockRequest.swift in Sources */,
+				D867017A2CCEE86A00FFBF79 /* WelpSearchViewModelTests.swift in Sources */,
+				D86701702CCEE48700FFBF79 /* LocationServiceTests.swift in Sources */,
+				D86701742CCEE58900FFBF79 /* APIManagerTests.swift in Sources */,
+				D86701682CCEE02500FFBF79 /* MockJSONResponses.swift in Sources */,
+				D867017C2CCEE8DB00FFBF79 /* MockBusinessRepository.swift in Sources */,
+				D867016E2CCEE0DC00FFBF79 /* MockSearchService.swift in Sources */,
+				D86701662CCEDFF100FFBF79 /* MockRequestManager.swift in Sources */,
+				D867016A2CCEE06000FFBF79 /* WelpSearchServiceTests.swift in Sources */,
+				D86701622CCEDF8300FFBF79 /* MockAPIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ABB14912167C42700A2CB2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ABB14782167C42300A2CB2C /* Welp */;
+			targetProxy = 5ABB14902167C42700A2CB2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5ABB14872167C42600A2CB2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ABB14882167C42600A2CB2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5ABB14A12167C42700A2CB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5ABB14A22167C42700A2CB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5ABB14A42167C42700A2CB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9UES6HSTC;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/WeedmapsChallenge/Assets/Plists/Welp-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Welp;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welp.welp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5ABB14A52167C42700A2CB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9UES6HSTC;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/WeedmapsChallenge/Assets/Plists/Welp-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Welp;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welp.welp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5ABB14A72167C42700A2CB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9UES6HSTC;
+				INFOPLIST_FILE = WelpTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welp.welpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Welp.app/Welp";
+			};
+			name = Debug;
+		};
+		5ABB14A82167C42700A2CB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9UES6HSTC;
+				INFOPLIST_FILE = WelpTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welp.welpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Welp.app/Welp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ABB14742167C42300A2CB2C /* Build configuration list for PBXProject "Welp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ABB14A12167C42700A2CB2C /* Debug */,
+				5ABB14A22167C42700A2CB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ABB14A32167C42700A2CB2C /* Build configuration list for PBXNativeTarget "Welp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ABB14A42167C42700A2CB2C /* Debug */,
+				5ABB14A52167C42700A2CB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ABB14A62167C42700A2CB2C /* Build configuration list for PBXNativeTarget "WelpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ABB14A72167C42700A2CB2C /* Debug */,
+				5ABB14A82167C42700A2CB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5ABB14712167C42300A2CB2C /* Project object */;
+}
