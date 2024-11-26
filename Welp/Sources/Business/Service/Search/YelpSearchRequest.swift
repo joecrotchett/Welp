@@ -82,7 +82,7 @@ enum YelpSearchRequest: RequestProtocol {
     var headers: [String : String] {
         [
             "Content-Type" : "application/json",
-            "Authorization" : "Bearer 4TistrteO3X1MbW6ryEvZFsO2l8a-P8ZLlllt6m-fBz5If9ZdMYtNqyfnPFo8JE8mB8Cpvto_Nb9TSgf3UU_b2zeyMd628CLv621rE9RPeqJpjyeyp3Uti0mvhMbZ3Yx"
+            "Authorization" : "Bearer [add your key here]"
         ]
     }
 
